@@ -7,8 +7,7 @@ import java.io.*;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-//import static org.mockito.Mockito.mock;
-//import static org.mockito.Mockito.when;
+
 
 public class StreamTest {
 
@@ -65,24 +64,5 @@ public class StreamTest {
         int[] expected={-456, 12};
         assertArrayEquals(expected, StreamClass.readFixPosition(file, 8));
     }
-
-    //4
-//    @Test
-//    public void testGetFileExtension() {
-//        File mockDir = mock(File.class);
-//        when(mockDir.isDirectory()).thenReturn(true);
-//        when(mockDir.getName()).thenReturn("dir.java");
-//        File[] mockListFiles = {
-//                new File("test.java"),
-//                new File("test.txt"),
-//                new File("second.java")
-//        };
-//        when(mockDir.listFiles()).thenReturn(mockListFiles);
-//
-//        List<String> files = StreamClass.getFileExtension(mockDir, ".java");
-//        List<String> expected = new ArrayList<>();
-//        Collections.addAll(expected, "test.java", "second.java");
-//        assertEquals(files, expected);
-//    }
 }
 
