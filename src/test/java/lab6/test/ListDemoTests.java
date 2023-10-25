@@ -81,10 +81,10 @@ public class ListDemoTests {
     //5 Множество людей из входного списка с максимальным возрастом
     @Test
     public void personMaxAgeTest() {
-        Human human1 = new Human("Alina", "Akimova", "Alexandrovna", 19);
-        Human human2 = new Human("Kate", "Pinchyck", "Andreevna", 21);
-        Human human3 = new Human("Kate", "Akimova", "Alekseevna", 20);
-        Human human4 = new Human("Anastasia", "Sobol", "Alekseevna", 21);
+        Human human1 = new Human("Alina", "Aist", "Alexandrovna", 19);
+        Human human2 = new Human("Kate", "Pin", "Andreevna", 21);
+        Human human3 = new Human("Kate", "Aist", "Alekseevna", 20);
+        Human human4 = new Human("Anastasia", "Pin", "Alekseevna", 21);
         ArrayList<Integer> people = new ArrayList<>();
         Collections.addAll(people, human1.getAge(), human2.getAge(), human3.getAge(), human4.getAge());
         //assertEquals(personMaxAge(people), );
@@ -93,12 +93,12 @@ public class ListDemoTests {
     //7 Множество людей, идентификаторы которых содержатся во входном множестве
     @Test
     public void filterByIdentifierTest() {
-        Human human1 = new Human("Alina", "Akimova", "Alexandrovna", 19);
-        Human human2 = new Human("Kate", "Pinchyck", "Andreevna", 21);
-        Human human3 = new Human("Kate", "Akimova", "Alekseevna", 20);
-        Human human4 = new Human("Anastasia", "Sobol", "Alekseevna", 19);
-        Human human5 = new Human("Kate", "Pinchyck", "Andreevna", 18);
-        Human human6 = new Human("Daria", "Kniazeva", "Alekseevna", 22);
+        Human human1 = new Human("Alina", "Aist", "Alexandrovna", 19);
+        Human human2 = new Human("Kate", "Pin", "Andreevna", 21);
+        Human human3 = new Human("Kate", "Aist", "Alekseevna", 20);
+        Human human4 = new Human("Anastasia", "Orlova", "Alekseevna", 19);
+        Human human5 = new Human("Kate", "Pin", "Andreevna", 18);
+        Human human6 = new Human("Daria", "Knife", "Alekseevna", 22);
         HashSet<Integer> peopleSet = new HashSet<>();
         Collections.addAll(peopleSet, human1.getAge(), human2.getAge(), human3.getAge(), human4.getAge(), human5.getAge(), human6.getAge());
         HashMap<Integer, Human> peopleMap = new HashMap<>();
@@ -113,10 +113,10 @@ public class ListDemoTests {
     //8 Список идентификаторов людей, чей возраст не менее 18 лет
     @Test
     public void listOfIdentifierTest() {
-        Human human1 = new Human("Alina", "Akimova", "Alexandrovna", 19);
-        Human human2 = new Human("Kate", "Pinchyck", "Andreevna", 10);
-        Human human3 = new Human("Kate", "Akimova", "Alekseevna", 20);
-        Human human4 = new Human("Anastasia", "Sobol", "Alekseevna", 17);
+        Human human1 = new Human("Alina", "Aist", "Alexandrovna", 19);
+        Human human2 = new Human("Kate", "Pin", "Andreevna", 10);
+        Human human3 = new Human("Kate", "Aist", "Alekseevna", 20);
+        Human human4 = new Human("Anastasia", "Orlova", "Alekseevna", 17);
         HashMap<Integer, Human> peopleMap = new HashMap<>();
         peopleMap.put(1, human1);
         peopleMap.put(2, human2);
@@ -131,10 +131,10 @@ public class ListDemoTests {
     //9 Отображение сопоставляет идентификатору возраст человека
     @Test
     public void makeMapByTheAgeTest() {
-        Human human1 = new Human("Alina", "Akimova", "Alexandrovna", 19);
-        Human human2 = new Human("Kate", "Pinchyck", "Andreevna", 10);
-        Human human3 = new Human("Kate", "Akimova", "Alekseevna", 20);
-        Human human4 = new Human("Anastasia", "Sobol", "Alekseevna", 17);
+        Human human1 = new Human("Alina", "Aist", "Alexandrovna", 19);
+        Human human2 = new Human("Kate", "Pin", "Andreevna", 10);
+        Human human3 = new Human("Kate", "Aist", "Alekseevna", 20);
+        Human human4 = new Human("Anastasia", "Orlova", "Alekseevna", 17);
         HashMap<Integer, Human> peopleMap = new HashMap<>();
         peopleMap.put(1, human1);
         peopleMap.put(2, human2);
@@ -153,10 +153,10 @@ public class ListDemoTests {
     //10 отображение, которое целому числу сопоставляет список всех людей данного возраста из входного множества
     @Test
     public void makeAgeToListOfHumanTest() {
-        Human human1 = new Human("Alina", "Akimova", "Alexandrovna", 20);
-        Human human2 = new Human("Kate", "Pinchyck", "Andreevna", 10);
-        Human human3 = new Human("Kate", "Akimova", "Alekseevna", 20);
-        Human human4 = new Human("Anastasia", "Sobol", "Alekseevna", 17);
+        Human human1 = new Human("Alina", "Aist", "Alexandrovna", 20);
+        Human human2 = new Human("Kate", "Pin", "Andreevna", 10);
+        Human human3 = new Human("Kate", "Aist", "Alekseevna", 20);
+        Human human4 = new Human("Anastasia", "Orlova", "Alekseevna", 17);
         HashSet<Human> peopleSet = new HashSet<>();
         Collections.addAll(peopleSet, human1, human2, human3, human4);
         List<Human> people1 = new ArrayList<>();
